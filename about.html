@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Minimal clean styling - man-made, no extra code */
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+        }
+        /* Top contact bar */
+        .top-contact-bar {
+            background-color: #0a0f1a;
+            color: #e9ecef;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        .top-contact-bar a {
+            color: #fcb900;
+            text-decoration: none;
+        }
+        .top-contact-bar a:hover {
+            text-decoration: underline;
+        }
+        .navbar-brand img {
+            max-height: 55px;
+            width: auto;
+        }
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .navbar-nav .nav-link {
+            font-weight: 600;
+            color: #1a2a3a;
+            margin: 0 4px;
+            transition: 0.2s;
+        }
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: #fcb900;
+        }
+        .page-header {
+            background: linear-gradient(135deg, #1a2a3a 0%, #0f1a24 100%);
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            color: white;
+        }
+        .section-title {
+            font-weight: 800;
+            letter-spacing: -0.3px;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        .section-subtitle {
+            color: #fcb900;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+        .who-we-are {
+            font-weight: 600;
+            color: #f7931e;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .value-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.5rem;
+            transition: all 0.25s ease;
+            border: 1px solid #f0f0f0;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+            border-color: #fcb900;
+        }
+        .value-icon {
+            font-size: 2.5rem;
+            color: #fcb900;
+            margin-bottom: 1rem;
+        }
+        .highlight-box {
+            background-color: #fcb900;
+            padding: 1.5rem;
+            border-radius: 16px;
+            color: #000;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fcb900;
+            line-height: 1.2;
+        }
+        hr.divider {
+            width: 70px;
+            height: 3px;
+            background: #fcb900;
+            opacity: 1;
+            margin: 1rem 0 1.5rem 0;
+        }
+        .team-img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+        .footer-section {
+            background-color: #0a0f1a;
+            color: #e9ecef;
+            padding: 3rem 0 2rem;
+            margin-top: 3rem;
+        }
+        .footer-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+            color: #f7931e;
+        }
+        .footer-link {
+            color: #ddd;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+        .footer-link:hover {
+            color: #f7931e;
+            text-decoration: underline;
+            padding-left: 4px;
+        }
+        .contact-info i {
+            color: #f7931e;
+            width: 28px;
+            margin-right: 6px;
+        }
+        iframe {
+            border-radius: 12px;
+            width: 100%;
+            height: 180px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .stat-number {
+                font-size: 2rem;
+            }
+            .top-contact-bar .text-end {
+                text-align: center !important;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP CONTACT BAR -->
+<div class="top-contact-bar">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <i class="fas fa-phone-alt me-2" style="color: #fcb900;"></i> +91 9764548822 &nbsp;&nbsp;|&nbsp;&nbsp;
+                <i class="fas fa-envelope me-2" style="color: #fcb900;"></i> vinayak.adagale@balajiconstructionpune.com
+            </div>
+            <div class="col-md-6 text-end">
+                <span class="me-3"><i class="fas fa-clock me-1"></i> Mon-Sat: 9AM-7PM</span>
+                <a href="#" class="text-white-50"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white-50 ms-3"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  NAV -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://balajiconstructionpune.com/images/logo.png" alt="Balaji Construction Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active fw-semibold" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="package.html">Packages</a></li>
+                <li class="nav-item"><a class="nav-link" href="interior_work.html">Interior Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HEADER (About ) -->
+<div class="page-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <span class="section-subtitle"><i class="fas fa-hard-hat me-2"></i> KNOW WHO WE ARE</span>
+                <h1 class="display-5 fw-bold mb-3">About Balaji Construction</h1>
+                <p class="lead opacity-90">Pune's most trusted civil contractor with decades of excellence, innovation, and unwavering commitment to quality construction.</p>
+                <hr class="divider">
+                <p>Balaji Construction India is regarded as one of the top reputed civil contractors in Pune. An award-winning civil contractor, we have always been creative, innovative, and imaginative in the field of real estate developments across the Pune region.</p>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block text-end">
+                <i class="fas fa-building fa-5x text-warning opacity-30"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  MAIN CONTENT  -->
+<div class="container py-4">
+    <!-- Our Story Row -->
+    <div class="row g-5 mb-5 align-items-center">
+        <div class="col-md-6">
+            <img src="https://balajiconstructionpune.com/images/about/style1/about.png" alt="Construction professionals" class="img-fluid rounded-4 shadow-lg">
+        </div>
+        <div class="col-md-6">
+            <div class="who-we-are"><i class="fas fa-flag-checkered me-2"></i> :: OUR JOURNEY</div>
+            <h2 class="section-title">Building Pune's Skyline Since 2002</h2>
+            <p>Balaji Construction started with a simple vision: deliver exceptional quality, integrity, and timely execution. Over two decades, we've transformed into a premier civil contracting firm known for residential townships, commercial complexes, luxury bungalows, and renovation projects across Pune and PCMC region.</p>
+            <p>We combine modern construction techniques with skilled craftsmanship. Every project — whether a small home interior or a large-scale residential tower — receives the same dedication and precision. Our reputation is built on transparency, safety standards, and client satisfaction.</p>
+            <div class="row mt-4 text-center">
+                <div class="col-4">
+                    <div class="stat-number">500+</div>
+                    <div class="small text-secondary">Projects Completed</div>
+                </div>
+                <div class="col-4">
+                    <div class="stat-number">200+</div>
+                    <div class="small text-secondary">Happy Clients</div>
+                </div>
+                <div class="col-4">
+                    <div class="stat-number">22+</div>
+                    <div class="small text-secondary">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Values Section -->
+    <div class="my-5 pt-3">
+        <div class="text-center mb-5">
+            <span class="section-subtitle">WHAT DEFINES US</span>
+            <h2 class="section-title">Our Core Values</h2>
+            <p class="mx-auto" style="max-width: 700px;">We believe in building relationships that last, grounded in honesty and superior workmanship.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="value-card text-center">
+                    <div class="value-icon"><i class="fas fa-gem"></i></div>
+                    <h4 class="h5 fw-bold">Quality First</h4>
+                    <p class="text-secondary">Premium materials, rigorous checks, and international standards ensure every structure stands the test of time.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="value-card text-center">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h4 class="h5 fw-bold">Integrity & Trust</h4>
+                    <p class="text-secondary">Complete transparency in costing, timelines, and contracts. We deliver what we promise.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="value-card text-center">
+                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h4 class="h5 fw-bold">Innovation</h4>
+                    <p class="text-secondary">Adopting modern construction tech, sustainable practices, and smart design solutions.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="value-card text-center">
+                    <div class="value-icon"><i class="fas fa-users"></i></div>
+                    <h4 class="h5 fw-bold">Client Centricity</h4>
+                    <p class="text-secondary">Your dream is our mission. We collaborate closely to bring your vision to reality.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="value-card text-center">
+                    <div class="value-icon"><i class="fas fa-clock"></i></div>
+                    <h4 class="h5 fw-bold">Timely Delivery</h4>
+                    <p class="text-secondary">Efficient project management ensures milestones are met without compromising quality.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="value-card text-center">
+                    <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4 class="h5 fw-bold">Safety Commitment</h4>
+                    <p class="text-secondary">Zero compromise on site safety, training, and adherence to regulations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leadership & Team Section -->
+    <div class="row mt-5 pt-3 align-items-center">
+        <div class="col-md-5 order-md-2">
+            <img src="https://balajiconstructionpune.com/images/slider/banner6.jpg" alt="Balaji Construction team" class="team-img">
+        </div>
+        <div class="col-md-7 order-md-1">
+            <div class="who-we-are"><i class="fas fa-user-tie me-2"></i> :: MEET THE LEADER</div>
+            <h2 class="section-title">Guided by Experience & Vision</h2>
+            <p>Under the expert leadership of Mr. Vinayak Adagale, Balaji Construction has grown into a powerhouse of civil engineering and contracting. With deep roots in Pune's real estate ecosystem, our director brings over 25 years of hands-on experience in residential, commercial, and infrastructure projects.</p>
+            <p>Our team comprises skilled engineers, architects, site supervisors, and craftsmen who take pride in delivering excellence. We invest in continuous training and modern equipment, ensuring every project exceeds client expectations.</p>
+            <div class="highlight-box mt-4">
+                <h5><i class="fas fa-phone-alt me-2"></i> DIRECT CONTACT</h5>
+                <p><strong>Office Head:</strong> Vinayak Adagale<br>
+                <strong>Quick Helpline:</strong> 9764548822<br>
+                <strong>Email:</strong> vinayak.adagale@balajiconstructionpune.com</p>
+                <p class="mb-0"><i class="fas fa-map-marker-alt me-2"></i> Lohegaon, Pune - 411047</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us? Extra content -->
+    <div class="bg-light p-4 rounded-4 mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h3 class="fw-bold mb-3"><i class="fas fa-trophy text-warning me-2"></i> Why Balaji Construction?</h3>
+                <p>Recognized as one of the top civil contractors in Pune, we offer end-to-end solutions: from design conceptualization and approvals to construction, finishing, and handover. Our portfolio includes independent bungalows, gated communities, redevelopment projects, and commercial steel structures. We're known for competitive pricing, premium finish, and hassle-free execution.</p>
+                <ul class="list-unstyled row">
+                    <li class="col-md-6 mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Award-winning civil contractor</li>
+                    <li class="col-md-6 mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Transparent cost estimation</li>
+                    <li class="col-md-6 mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Use of high-grade TMT & concrete</li>
+                    <li class="col-md-6 mb-2"><i class="fas fa-check-circle text-warning me-2"></i> On-time project delivery</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-hard-hat fa-4x text-warning opacity-50"></i>
+                <p class="mt-2 fw-bold">ISO & Safety Certified</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  CONTACT INFO  -->
+<div class="container my-5">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="highlight-box h-100 d-flex flex-column justify-content-center">
+                <h5><i class="fas fa-building me-2"></i> CONSTRUCTION OFFICE</h5>
+                <p><strong>Address:</strong><br>
+                Balaji Construction, C/O Dattatray Adagale, Laxmi Niwas, Diffence Colony, Sr no.8/1/2/1, Nirgudi Road,<br>
+                Lohegaon Tal: Haveli Pune, Maharashtra - 411047.</p>
+                <p><strong>Phone:</strong> 9764548822</p>
+                <p><strong>Email:</strong> <a href="mailto:vinayak.adagale@balajiconstructionpune.com" class="text-dark fw-semibold">vinayak.adagale@balajiconstructionpune.com</a></p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="border rounded-4 p-3 h-100 bg-white shadow-sm">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.789706469137!2d73.91808551437295!3d18.539373773542975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c148d5e9c4f9%3A0x3184d4ddfb83fd2f!2sBalaji%20Construction!5e0!3m2!1sen!2sin!4v1694344818234!5m2!1sen!2sin" allowfullscreen="" loading="lazy" style="width:100%; height: 220px; border-radius: 12px;"></iframe>
+                <p class="mt-2 small text-muted text-center"><i class="fas fa-location-dot me-1"></i> Visit our headquarters in Lohegaon, Pune</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  FOOTER  -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <img src="https://balajiconstructionpune.com/images/logo.png" alt="Balaji Construction" class="mb-3" style="max-width: 170px;">
+                <p class="small">Give us a call or drop by anytime, we are available to answer all enquiries 24*7 on business days.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.789706469137!2d73.91808551437295!3d18.539373773542975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c148d5e9c4f9%3A0x3184d4ddfb83fd2f!2sBalaji%20Construction!5e0!3m2!1sen!2sin!4v1694344818234!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Our Services</h5>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> Construction Contractor in Pune</a>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> Home Construction Contractors</a>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> Civil Contractor in Pune</a>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> Bungalow Contractors in Pune</a>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> Home Renovation Contractors</a>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> RCC Contractors in Pune</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Expertise</h5>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> Interior Work Contractor</a>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> Fabrication Work in Pune</a>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> Aluminium Fabricators</a>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> Structural Steel Fabricators</a>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> Commercial Contractors</a>
+                <a href="#" class="footer-link"><i class="fas fa-chevron-right fa-xs me-1"></i> Waterproofing Contractors</a>
+            </div>
+            <div class="col-lg-3 col-md-6 contact-info">
+                <h5 class="footer-title">Contact Info</h5>
+                <p class="mb-2"><i class="fas fa-map-pin"></i> Balaji Construction, Laxmi Niwas, Defence Colony, Nirgudi Road, Lohegaon, Pune - 411047</p>
+                <p class="mb-2"><i class="fas fa-phone-alt"></i> +91 9764548822</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:vinayak.adagale@balajiconstructionpune.com" class="footer-link d-inline">vinayak.adagale@balajiconstructionpune.com</a></p>
+            </div>
+        </div>
+        <hr class="mt-4 bg-secondary">
+        <div class="text-center pt-3 small">
+            &copy; All Rights Reserved  © <span class="text-warning">  Balaji Construction </span> 2026 Developed By  <span class="text-warning"> Dexter Intelligence</span> | Hosted By <span class="text-warning">  Urva Hosting
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
